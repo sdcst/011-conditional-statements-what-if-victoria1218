@@ -12,3 +12,14 @@
 # Outputs:
 # "the number is even"
 # "the number is odd"
+
+n = int(input("Enter a number"))
+
+n=int(input("Entere a number: "))
+x = n % 2
+
+if x==0 or n==2:
+    print("the number is even")
+
+else:
+    print("the number is odd")

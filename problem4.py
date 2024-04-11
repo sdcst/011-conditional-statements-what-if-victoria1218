@@ -33,3 +33,26 @@ that is an obtuse triangle
 
 
 """
+
+
+a = float(input("Enter one side: "))
+b = float(input("Enter a second side: "))
+c = float(input("Enter third side: "))
+if a > b and a > c:
+    h = round(a)
+    d = round(b)
+    e = round(c)
+if b > a and b > c:
+    h = round(b)
+    d = round(a)
+    e = round(c)
+if c > a and c > b:
+    h = round(c)
+    d = round(a)
+    e = round(b)
+if (d**2+e**2) > (h**2):
+    print("that is an acute triangle")
+elif (d**2+e**2) < (h**2):
+    print("that is an obtuse triangle")
+else:
+    print("that is a right triangle")
